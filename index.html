@@ -130,7 +130,7 @@
     const accessKey = 'eK9o4Q9YCFng1IP5h16bDuwYCT8fDniS_o3gvlKJFzM';
 
     // Imagen del hero principal
-    fetch(`https://api.unsplash.com/photos/random?query=law&orientation=landscape&client_id=${accessKey}`)
+    fetch(`https://api.unsplash.com/photos/random?query=gavel+courtroom+justice&orientation=landscape&client_id=${accessKey}`)
       .then(res => res.json())
       .then(data => {
         const heroImg = document.getElementById('unsplash-hero');
@@ -139,7 +139,7 @@
       });
 
     // Imagen de la sección "Sobre Nosotros"
-    fetch(`https://api.unsplash.com/photos/random?query=legal+team&orientation=landscape&client_id=${accessKey}`)
+    fetch(`https://api.unsplash.com/photos/random?query=lawyer+professional+legal-team&orientation=landscape&client_id=${accessKey}`)
       .then(res => res.json())
       .then(data => {
         const img = document.getElementById('unsplash-nosotros');
