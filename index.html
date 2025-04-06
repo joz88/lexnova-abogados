@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexNova Abogados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-900">LexNova Abogados</h1>
+      <nav>
+        <ul class="flex space-x-6 font-medium text-sm">
+          <li><a href="#inicio" class="hover:text-blue-600">Inicio</a></li>
+          <li><a href="#sobre-nosotros" class="hover:text-blue-600">Nosotros</a></li>
+          <li><a href="#servicios" class="hover:text-blue-600">Servicios</a></li>
+          <li><a href="#testimonios" class="hover:text-blue-600">Testimonios</a></li>
+          <li><a href="#contacto" class="hover:text-blue-600">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="h-screen bg-gray-900 flex items-center justify-center text-white text-center px-4 relative">
+    <img id="unsplash-hero" class="absolute inset-0 w-full h-full object-cover opacity-60" alt="Imagen legal">
+    <div class="relative z-10">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Tu tranquilidad legal, nuestra prioridad</h2>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">Abogados especializados en resolver tus problemas legales de forma ética, rápida y eficiente.</p>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="sobre-nosotros" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Sobre Nosotros</h2>
+      <p class="max-w-3xl mx-auto mb-8">Somos un equipo de abogados jóvenes pero con experiencia, apasionados por brindar asesoría legal clara y confiable. Nos especializamos en derecho civil, familiar y laboral.</p>
+      <img id="unsplash-nosotros" alt="Equipo Legal" class="mx-auto rounded-lg shadow-md">
+      <p class="mt-2 text-sm text-gray-500">Foto por <a id="photographer-link" href="#" target="_blank" class="underline">Nombre del Fotógrafo</a> en Unsplash</p>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Nuestros Servicios</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M8.25 4.5l.969 1.938M15.75 4.5l-.969 1.938M12 12v.008h.008V12H12zm0 0v.008h.008V12H12z" /></svg>
+          <h3 class="font-bold mb-2">Consultoría legal</h3>
+          <p>Asesoramiento personalizado según tu situación legal.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6.75 12l1.5-1.5L12 13.5l3.75-3.75L18 12" /></svg>
+          <h3 class="font-bold mb-2">Divorcios y pensiones</h3>
+          <p>Soluciones legales para situaciones familiares delicadas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v6l3 3" /></svg>
+          <h3 class="font-bold mb-2">Contratos civiles</h3>
+          <p>Redacción y revisión de contratos con respaldo legal.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4.5 12h15M4.5 6h15M4.5 18h15" /></svg>
+          <h3 class="font-bold mb-2">Asesoría laboral</h3>
+          <p>Defensa ante despidos injustificados y conflictos laborales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Testimonios</h2>
+      <div class="max-w-3xl mx-auto space-y-8">
+        <blockquote class="text-gray-700 italic">"Gracias a LexNova resolví mi caso de pensión sin complicaciones. Muy recomendados."<br><span class="block mt-2 font-semibold text-blue-800">— Laura G.</span></blockquote>
+        <blockquote class="text-gray-700 italic">"Tuvieron mucha paciencia y siempre me explicaron con claridad."<br><span class="block mt-2 font-semibold text-blue-800">— Marco R.</span></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Contáctanos</h2>
+      <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <form action="https://formsubmit.co/tu-email@ejemplo.com" method="POST" class="space-y-6">
+          <input type="hidden" name="_captcha" value="false">
+          <div>
+            <label for="nombre" class="block font-medium">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="w-full border border-gray-300 p-2 rounded mt-1" required>
+          </div>
+          <div>
+            <label for="email" class="block font-medium">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded mt-1" required>
+          </div>
+          <div>
+            <label for="mensaje" class="block font-medium">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="w-full border border-gray-300 p-2 rounded mt-1" required></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center p-4">
+    <p>&copy; 2025 LexNova Abogados. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Unsplash API JS -->
+  <script>
+    const accessKey = 'eK9o4Q9YCFng1IP5h16bDuwYCT8fDniS_o3gvlKJFzM';
+
+    // Imagen del hero principal
+    fetch(`https://api.unsplash.com/photos/random?query=law&orientation=landscape&client_id=${accessKey}`)
+      .then(res => res.json())
+      .then(data => {
+        const heroImg = document.getElementById('unsplash-hero');
+        heroImg.src = data.urls.full;
+        heroImg.alt = data.alt_description || 'Imagen legal';
+      });
+
+    // Imagen de la sección "Sobre Nosotros"
+    fetch(`https://api.unsplash.com/photos/random?query=legal+team&orientation=landscape&client_id=${accessKey}`)
+      .then(res => res.json())
+      .then(data => {
+        const img = document.getElementById('unsplash-nosotros');
+        const credit = document.getElementById('photographer-link');
+
+        img.src = data.urls.regular;
+        img.alt = data.alt_description || 'Equipo Legal';
+        credit.href = data.user.links.html;
+        credit.textContent = data.user.name;
+      });
+  </script>
+</body>
+</html>
